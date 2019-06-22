@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(morgan('dev'));
 
+// why include /students and /tests here
 app.use('/students', students);
 app.use('/tests', tests);
 
